@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Edit meeting{% endblock title %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <input type="submit" />
+</form>
+{% endblock content %}
