@@ -17,9 +17,9 @@
 {% endif %}
 <form method="post">
     <table>
-        {{ form }}
+        {{ form.as_table }}
     </table>
     {% csrf_token %}
-    <input type = "submit" value="Create" />
+    <input type="submit" value="Create" />
 </form>
 {% endblock %}
